@@ -1,4 +1,4 @@
-package com.springboot;
+package com.springcloud;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Demo001ApplicationTests {
+public class Demo002ApplicationTests {
 
 	@Test
 	public void contextLoads() {
