@@ -1,0 +1,5 @@
+act 消息发送成功确认，如果默认开启的时候，rabbitmq发送消息之后如果接受不到成功信号，则将会不断重试，直至成功
+#设置允许重试
+spring.rabbitmq.listener.simple.retry.enabled=true
+#设置重复响应次数
+spring.rabbitmq.listener.simple.retry.max-attempts=5
