@@ -1,11 +1,11 @@
 spring:
   application:
-    name: eureka01
+    name: eureka1
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://peer2:8081/eureka/
+      defaultZone: http://eureka2:8762/eureka/
   instance:
-    hostname: peer1
+    hostname: eureka1
 server:
-  port: 8080
+  port: 8761
