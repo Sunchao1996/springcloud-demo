@@ -1,11 +1,18 @@
 spring:
   application:
-    name: eureka2
+    name: eureka-server
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka1:8761/eureka
+      defaultZone: http://user:123456@eureka1:8761/eureka
   instance:
     hostname: eureka2
+
 server:
   port: 8762
+security:
+  basic:
+    enabled: true
+  user:
+    password: 123456
+    name: user
