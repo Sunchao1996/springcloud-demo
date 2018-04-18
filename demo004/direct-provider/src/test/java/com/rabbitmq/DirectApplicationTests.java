@@ -13,8 +13,11 @@ public class DirectApplicationTests {
     private Sender sender;
 
     @Test
-    public void send() {
-        sender.send();
+    public void send() throws InterruptedException {
+        while(true){
+            Thread.sleep(1000);
+            sender.send();
+        }
     }
 
 }

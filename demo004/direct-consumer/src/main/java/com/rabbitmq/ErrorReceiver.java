@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RabbitListener(
         bindings = @QueueBinding(
-                value = @Queue(value = "${mq.config.queue.error}", autoDelete = "true"),
+                value = @Queue(value = "${mq.config.queue.error}", autoDelete = "false"),
                 exchange = @Exchange(value = "${mq.config.exchange}", type = ExchangeTypes.DIRECT),
                 key = "${mq.config.queue.error.routing.key}"
         )
