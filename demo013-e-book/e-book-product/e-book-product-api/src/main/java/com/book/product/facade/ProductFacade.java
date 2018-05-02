@@ -1,6 +1,8 @@
 package com.book.product.facade;
 
 import com.book.product.domain.Product;
+import org.springframework.util.MimeType;
+import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,10 +21,11 @@ public interface ProductFacade {
     List<Product> list();
     @RequestMapping(value = "get",method = RequestMethod.GET)
     Product get(@RequestParam("id") Integer id);
-    @RequestMapping(value = "get1",method = RequestMethod.GET)
-    Product get1(Product product);
+//    接收参数是用对象接收的时候需要在接口上加上,consumes = MimeTypeUtils.APPLICATION_JSON_VALUE
+    @RequestMapping(value = "get1",method = RequestMethod.GET,consumes = MimeTypeUtils.APPLICATION_JSON_VALUE)
+    Product get1(@RequestBody Product product);
     @RequestMapping(value = "get2",method = RequestMethod.GET)
     Product get2(@RequestParam("id")Integer id,@RequestParam("name") String name);
-    @RequestMapping(value="add",method = RequestMethod.POST)
+    @RequestMapping(value="add",method = RequestMethod.POST,consumes = MimeTypeUtils.APPLICATION_JSON_VALUE)
     Product add(@RequestBody Product product);
 }

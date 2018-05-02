@@ -33,6 +33,8 @@
         <module>e-book-consumer-feign</module>
         <module>e-book-consumer-feign-param</module>
         <module>e-book-consumer-feign-gzip</module>
+        <module>e-book-consumer-feign-http</module>
+        <module>e-book-consumer-feign-log</module>
     </modules>
 
 </project>

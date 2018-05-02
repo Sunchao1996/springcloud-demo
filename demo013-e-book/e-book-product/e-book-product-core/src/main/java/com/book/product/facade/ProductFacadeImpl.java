@@ -37,7 +37,7 @@ public class ProductFacadeImpl implements ProductFacade {
     }
 
     @Override
-    public Product get1(Product product) {
+    public Product get1(@RequestBody Product product) {
         return product;
     }
 
