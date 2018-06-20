@@ -5,6 +5,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://user:123456@eureka2:8762/eureka/
+
   instance:
     hostname: eureka1
 
