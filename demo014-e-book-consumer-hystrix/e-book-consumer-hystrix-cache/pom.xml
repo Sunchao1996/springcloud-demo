@@ -16,6 +16,7 @@
         <groupId>com.consumer</groupId>
         <artifactId>hystrix</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath></relativePath>
     </parent>
 
     <properties>
@@ -29,6 +30,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>
