@@ -79,5 +79,6 @@
     <modules>
         <module>e-book-consumer-hystrix-ribbon</module>
         <module>e-book-consumer-hystrix-cache</module>
+        <module>e-book-consumer-hystrix-batch</module>
     </modules>
 </project>
