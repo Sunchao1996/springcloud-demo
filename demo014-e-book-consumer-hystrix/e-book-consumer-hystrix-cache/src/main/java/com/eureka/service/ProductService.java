@@ -22,10 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * what:    (这里用一句话描述这个类的作用). <br/>
- * when:    (这里描述这个类的适用时机 – 可选).<br/>
- * how:     (这里描述这个类的使用方法 – 可选).<br/>
- * warning: (这里描述这个类的注意事项 – 可选).<br/>
+ * what:  使用服务缓存
  *
  * @author 孙超 created on 2018/4/7
  */
@@ -35,10 +32,6 @@ public class ProductService {
     @Autowired
     private LoadBalancerClient loadBalancerClient;
 
-    @HystrixCommand(fallbackMethod = "fallback", commandProperties = {
-//            默认10秒，如果10秒之内并发数达到该设置值，请求会被拒绝和抛出异常并且fallback不会被调用
-            @HystrixProperty(name = HystrixPropertiesManager.FALLBACK_ISOLATION_SEMAPHORE_MAX_CONCURRENT_REQUESTS, value = "15")
-    })
     public List<Product> listProduct() {
         //拼接服务端地址
         ServiceInstance serviceInstance = loadBalancerClient.choose("e-book-product");
