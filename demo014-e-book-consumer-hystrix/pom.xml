@@ -65,7 +65,21 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -81,5 +95,6 @@
         <module>e-book-consumer-hystrix-cache</module>
         <module>e-book-consumer-hystrix-batch</module>
         <module>e-book-consumer-hystrix-breaker</module>
+        <module>e-book-consumer-hystrix-thread</module>
     </modules>
 </project>
