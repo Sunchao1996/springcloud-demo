@@ -97,5 +97,6 @@
         <module>e-book-consumer-hystrix-breaker</module>
         <module>e-book-consumer-hystrix-thread</module>
         <module>e-book-consumer-hystrix-semaphore</module>
+        <module>e-book-consumer-hystrix-feign-breaker</module>
     </modules>
 </project>
