@@ -96,5 +96,6 @@
         <module>e-book-consumer-hystrix-batch</module>
         <module>e-book-consumer-hystrix-breaker</module>
         <module>e-book-consumer-hystrix-thread</module>
+        <module>e-book-consumer-hystrix-semaphore</module>
     </modules>
 </project>
