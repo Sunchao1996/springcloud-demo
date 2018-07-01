@@ -37,11 +37,11 @@ public class ProductService {
             //隔离模式，SEMAPHORE信号量隔离
             @HystrixProperty(name = HystrixPropertiesManager.EXECUTION_ISOLATION_STRATEGY, value = "SEMAPHORE"),
             //执行完成之后判断的超时时间
-            @HystrixProperty(name = HystrixPropertiesManager.EXECUTION_ISOLATION_THREAD_TIMEOUT_IN_MILLISECONDS, value = "11000")
+            @HystrixProperty(name = HystrixPropertiesManager.EXECUTION_ISOLATION_THREAD_TIMEOUT_IN_MILLISECONDS, value = "1000")
     })
     public List<Product> listProduct() throws InterruptedException {
-        Thread.sleep(10000);
-        System.out.println("list--------"+j);
+//        Thread.sleep(10000);
+//        System.out.println("list--------"+j);
         j++;
         //拼接服务端地址
         ServiceInstance serviceInstance = loadBalancerClient.choose("e-book-product");

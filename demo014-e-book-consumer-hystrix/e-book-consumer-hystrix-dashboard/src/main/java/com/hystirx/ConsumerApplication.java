@@ -1,4 +1,4 @@
-package com.eureka;
+package com.hystirx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 @EnableEurekaClient
 
-//可视化监控
+//可视化监控服务
 @EnableHystrix
 @EnableHystrixDashboard
 public class ConsumerApplication {
