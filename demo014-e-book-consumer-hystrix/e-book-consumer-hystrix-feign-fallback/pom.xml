@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.consumer.hystrix</groupId>
-    <artifactId>e-book-consumer-hystrix-feign-breaker</artifactId>
+    <artifactId>e-book-consumer-hystrix-feign-fallback</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>e-book-consumer-hystrix-feign-breaker</name>
+    <name>e-book-consumer-hystrix-feign-fallback</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
