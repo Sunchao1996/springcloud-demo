@@ -4,20 +4,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.consumer.hystrix</groupId>
-    <artifactId>turbine</artifactId>
+    <artifactId>e-book-consumer-hystrix-feign-mq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>e-book-consumer-hystrix-turbine</name>
+    <name>e-book-consumer-hystrix-feign-mq</name>
     <description>Demo project for Spring Boot</description>
-
 
     <parent>
         <groupId>com.consumer</groupId>
         <artifactId>hystrix</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -29,14 +27,23 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-        <!--使用turbine监控多个服务和集群-->
         <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-turbine</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
         <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-netflix-turbine</artifactId>
+            <groupId>com.book</groupId>
+            <artifactId>e-book-product-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--使用rabbitmq +turbine监控服务数据-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
         </dependency>
     </dependencies>
 

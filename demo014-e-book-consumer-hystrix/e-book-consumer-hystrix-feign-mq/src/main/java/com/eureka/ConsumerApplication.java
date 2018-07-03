@@ -2,17 +2,16 @@ package com.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
-
-@EnableCircuitBreaker //开启服务降级熔断器
 @SpringBootApplication
-@EnableEurekaClient
-
-@EnableHystrix
+@EnableFeignClients
+@EnableDiscoveryClient //开启服务断路器
+//监控需要的注解
 @EnableHystrixDashboard
+@EnableHystrix
 public class ConsumerApplication {
 
     public static void main(String[] args) {
