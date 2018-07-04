@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.book</groupId>
-    <artifactId>e-book-product-core</artifactId>
+    <artifactId>e-book-user-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>e-book-product-core</name>
+    <name>e-book-user-core</name>
     <description>Demo project for Spring Boot</description>
 
 
     <parent>
         <groupId>com.book</groupId>
-        <artifactId>product</artifactId>
+        <artifactId>user</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
-            <artifactId>e-book-product-api</artifactId>
+            <artifactId>e-book-user-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--mybatis整合-->
