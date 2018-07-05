@@ -20,7 +20,7 @@
 
 
 		<!-- 生成实体类地址 -->
-		<javaModelGenerator targetPackage="com.sc.book.user.domain" targetProject="src\main\java">
+		<javaModelGenerator targetPackage="com.sc.book.trade.domain" targetProject="src\main\java">
 			<!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
 			<property name="enableSubPackages" value="false" />
 			<!-- 是否针对string类型的字段在set的时候进行trim调用 -->
@@ -28,19 +28,19 @@
 		</javaModelGenerator>
 
 		<!-- 生成mapxml文件 -->
-		<sqlMapGenerator targetPackage="mybatis/com/sc/book/user" targetProject="src\main\resources">
+		<sqlMapGenerator targetPackage="mybatis/com/sc/book/trade" targetProject="src\main\resources">
 			<!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 
 		<!-- 生成mapxml对应client，也就是接口dao -->
-		<javaClientGenerator targetPackage="com.sc.book.user.persistence" targetProject="src\main\java" type="XMLMAPPER">
+		<javaClientGenerator targetPackage="com.sc.book.trade.persistence" targetProject="src\main\java" type="XMLMAPPER">
 			<!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 
 
-		<table schema="book-user" tableName="user" domainObjectName="User"
+		<table schema="book-trade" tableName="trade" domainObjectName="Trade"
 		enableCountByExample="false" 
 		enableDeleteByExample="false" 
 		enableSelectByExample="false" 
