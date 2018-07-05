@@ -1,0 +1,314 @@
+22:03:12.120 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c: startup date [Tue Jun 26 22:03:12 CST 2018]; root of context hierarchy
+22:03:12.635 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+22:03:12.715 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:03:12.862 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$91733360] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:14.560 [main] INFO  com.eureka.ConsumerApplication - No active profile set, falling back to default profiles: default
+22:03:14.797 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c93f6e1: startup date [Tue Jun 26 22:03:14 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:03:16.600 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=56a4f9fd-a5b7-369d-906f-69d8d15064dd
+22:03:16.634 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:03:16.964 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$be6b6681] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.697 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$b2df2b25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.729 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.751 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.757 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$547a9e06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.777 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.786 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:17.820 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$91733360] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:03:19.313 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+22:03:19.361 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:03:19.363 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+22:03:19.894 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:03:19.895 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5098 ms
+22:03:20.334 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+22:03:20.355 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:03:20.356 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:03:20.356 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:03:20.356 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:03:22.434 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:03:22.434 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:03:22.441 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:03:22.441 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:03:22.984 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c93f6e1: startup date [Tue Jun 26 22:03:14 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:03:23.136 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public com.eureka.domain.Product com.eureka.controller.ProductController.get(java.lang.Integer)
+22:03:23.137 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/del],methods=[GET]}" onto public void com.eureka.controller.ProductController.del(java.lang.Integer)
+22:03:23.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/list],methods=[GET]}" onto public java.util.List<com.eureka.domain.Product> com.eureka.controller.ProductController.productList()
+22:03:23.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:03:23.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:03:23.290 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:03:23.290 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:03:23.377 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:03:24.229 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:03:24.242 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+22:03:24.244 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+22:03:24.245 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+22:03:24.248 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+22:03:24.265 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+22:03:24.313 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1c93f6e1,type=ConfigurationPropertiesRebinder]
+22:03:24.500 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+22:03:24.513 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+22:03:24.659 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+22:03:25.589 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+22:03:25.590 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+22:03:25.709 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+22:03:25.710 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+22:03:26.221 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:03:26.703 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+22:03:26.703 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+22:03:26.703 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+22:03:26.703 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+22:03:26.704 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+22:03:26.704 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+22:03:26.704 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+22:03:26.945 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+22:03:26.949 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+22:03:26.953 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:03:26.960 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1530021806960 with initial instances count: 4
+22:03:27.214 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application e-book-consumer-hystrix-ribbon with eureka with status UP
+22:03:27.215 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1530021807214, current=UP, previous=STARTING]
+22:03:27.217 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000: registering service...
+22:03:27.265 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+22:03:27.280 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+22:03:27.290 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000 - registration status: 204
+22:03:27.299 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:03:27.349 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+22:03:27.350 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9000
+22:03:27.356 [main] INFO  com.eureka.ConsumerApplication - Started ConsumerApplication in 17.084 seconds (JVM running for 19.595)
+22:04:00.169 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:04:00.170 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:04:00.219 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+22:08:26.710 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:11:37.164 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c: startup date [Tue Jun 26 22:11:37 CST 2018]; root of context hierarchy
+22:11:37.901 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+22:11:37.968 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:11:38.083 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a2dd4a47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:39.678 [main] INFO  com.eureka.ConsumerApplication - No active profile set, falling back to default profiles: default
+22:11:39.836 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c93f6e1: startup date [Tue Jun 26 22:11:39 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:11:41.694 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=56a4f9fd-a5b7-369d-906f-69d8d15064dd
+22:11:41.743 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:11:42.000 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$cfd57d68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.291 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$c449420c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.324 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.348 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.355 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$65e4b4ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.370 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.376 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:42.403 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a2dd4a47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:43.888 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+22:11:43.921 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:11:43.923 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+22:11:44.429 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:11:44.429 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4593 ms
+22:11:44.825 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+22:11:44.833 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:11:44.834 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:11:44.834 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:11:44.835 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:11:46.736 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:11:46.736 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:11:46.742 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:11:46.742 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:11:47.253 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c93f6e1: startup date [Tue Jun 26 22:11:39 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:11:47.422 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public com.eureka.domain.Product com.eureka.controller.ProductController.get(java.lang.Integer)
+22:11:47.425 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/list],methods=[GET]}" onto public java.util.List<com.eureka.domain.Product> com.eureka.controller.ProductController.productList()
+22:11:47.425 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/del],methods=[GET]}" onto public void com.eureka.controller.ProductController.del(java.lang.Integer)
+22:11:47.430 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:11:47.431 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:11:47.600 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:11:47.600 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:11:47.687 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:11:48.523 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:11:48.538 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+22:11:48.540 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+22:11:48.541 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+22:11:48.552 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+22:11:48.583 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+22:11:48.606 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1c93f6e1,type=ConfigurationPropertiesRebinder]
+22:11:48.879 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+22:11:48.893 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+22:11:49.005 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+22:11:49.931 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+22:11:49.932 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+22:11:50.054 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+22:11:50.054 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+22:11:50.572 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:11:51.092 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+22:11:51.093 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+22:11:51.093 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+22:11:51.093 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+22:11:51.093 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+22:11:51.094 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+22:11:51.094 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+22:11:51.338 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+22:11:51.342 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+22:11:51.345 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:11:51.350 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1530022311350 with initial instances count: 4
+22:11:51.469 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application e-book-consumer-hystrix-ribbon with eureka with status UP
+22:11:51.470 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1530022311470, current=UP, previous=STARTING]
+22:11:51.472 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000: registering service...
+22:11:51.513 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+22:11:51.531 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+22:11:51.532 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000 - registration status: 204
+22:11:51.548 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:11:51.597 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+22:11:51.598 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9000
+22:11:51.604 [main] INFO  com.eureka.ConsumerApplication - Started ConsumerApplication in 16.153 seconds (JVM running for 18.268)
+22:11:57.923 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:11:57.924 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:11:57.987 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+22:24:34.834 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c: startup date [Tue Jun 26 22:24:34 CST 2018]; root of context hierarchy
+22:24:35.222 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+22:24:35.290 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:24:35.398 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$91733360] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:36.580 [main] INFO  com.eureka.ConsumerApplication - No active profile set, falling back to default profiles: default
+22:24:36.624 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@512baff6: startup date [Tue Jun 26 22:24:36 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:24:38.102 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=56a4f9fd-a5b7-369d-906f-69d8d15064dd
+22:24:38.150 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:24:38.369 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$be6b6681] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.670 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$b2df2b25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.701 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.722 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.730 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$547a9e06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.745 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.751 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:38.776 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$91733360] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:24:40.396 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+22:24:40.433 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:24:40.435 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+22:24:41.040 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:24:41.040 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4416 ms
+22:24:41.491 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+22:24:41.502 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:24:41.502 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:24:41.503 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:24:41.503 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:24:44.012 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:24:44.012 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:24:44.026 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:24:44.029 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:24:45.176 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@512baff6: startup date [Tue Jun 26 22:24:36 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:24:45.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public com.eureka.domain.Product com.eureka.controller.ProductController.get(java.lang.Integer)
+22:24:45.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/list],methods=[GET]}" onto public java.util.List<com.eureka.domain.Product> com.eureka.controller.ProductController.productList()
+22:24:45.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/del],methods=[GET]}" onto public void com.eureka.controller.ProductController.del(java.lang.Integer)
+22:24:45.591 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:24:45.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:24:45.909 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:24:45.910 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:24:46.060 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:24:47.108 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:24:47.120 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+22:24:47.122 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+22:24:47.123 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+22:24:47.126 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+22:24:47.144 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+22:24:47.159 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=512baff6,type=ConfigurationPropertiesRebinder]
+22:24:47.433 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+22:24:47.451 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+22:24:48.609 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+22:24:49.547 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+22:24:49.547 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+22:24:49.730 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+22:24:49.731 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+22:24:50.361 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:24:50.854 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+22:24:50.854 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+22:24:50.855 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+22:24:50.855 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+22:24:50.855 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+22:24:50.855 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+22:24:50.855 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+22:24:51.093 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+22:24:51.096 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+22:24:51.099 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:24:51.104 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1530023091103 with initial instances count: 3
+22:24:51.254 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application e-book-consumer-hystrix-ribbon with eureka with status UP
+22:24:51.255 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1530023091255, current=UP, previous=STARTING]
+22:24:51.259 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000: registering service...
+22:24:51.306 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+22:24:51.344 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+22:24:51.367 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:24:51.372 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000 - registration status: 204
+22:24:51.422 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+22:24:51.423 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9000
+22:24:51.430 [main] INFO  com.eureka.ConsumerApplication - Started ConsumerApplication in 17.771 seconds (JVM running for 19.27)
+22:24:57.021 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:24:57.022 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:24:57.074 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 52 ms
+22:29:50.858 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:32:33.314 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c: startup date [Tue Jun 26 22:32:33 CST 2018]; root of context hierarchy
+22:32:34.055 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+22:32:34.232 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:32:34.342 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$91733360] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:36.133 [main] INFO  com.eureka.ConsumerApplication - No active profile set, falling back to default profiles: default
+22:32:36.235 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@512baff6: startup date [Tue Jun 26 22:32:36 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:32:38.133 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=56a4f9fd-a5b7-369d-906f-69d8d15064dd
+22:32:38.162 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:32:38.954 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$be6b6681] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:40.772 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$b2df2b25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:40.811 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:40.830 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:40.837 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$547a9e06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:40.853 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:40.863 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:41.034 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$91733360] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:43.235 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+22:32:43.274 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:32:43.275 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+22:32:43.857 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:32:43.858 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7622 ms
+22:32:44.269 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+22:32:44.277 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:32:44.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:32:44.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:32:44.279 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:32:46.559 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:32:46.559 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:46.595 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+22:32:46.595 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:47.089 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@512baff6: startup date [Tue Jun 26 22:32:36 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c
+22:32:47.240 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public com.eureka.domain.Product com.eureka.controller.ProductController.get(java.lang.Integer)
+22:32:47.241 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/del],methods=[GET]}" onto public void com.eureka.controller.ProductController.del(java.lang.Integer)
+22:32:47.241 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/list],methods=[GET]}" onto public java.util.List<com.eureka.domain.Product> com.eureka.controller.ProductController.productList()
+22:32:47.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:32:47.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:32:47.416 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:32:47.416 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:32:47.506 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:32:48.367 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:32:48.383 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+22:32:48.385 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+22:32:48.386 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+22:32:48.389 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+22:32:48.435 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+22:32:48.450 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=512baff6,type=ConfigurationPropertiesRebinder]
+22:32:48.630 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+22:32:48.642 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+22:32:48.778 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+22:32:49.765 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+22:32:49.765 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+22:32:49.896 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+22:32:49.896 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+22:32:50.447 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:32:51.036 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+22:32:51.037 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+22:32:51.037 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+22:32:51.037 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+22:32:51.037 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+22:32:51.038 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+22:32:51.038 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+22:32:51.347 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+22:32:51.351 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+22:32:51.355 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:32:51.363 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1530023571363 with initial instances count: 4
+22:32:51.508 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application e-book-consumer-hystrix-ribbon with eureka with status UP
+22:32:51.509 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1530023571509, current=UP, previous=STARTING]
+22:32:51.512 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000: registering service...
+22:32:51.658 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+22:32:51.672 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+22:32:51.697 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:32:51.714 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_E-BOOK-CONSUMER-HYSTRIX-RIBBON/NODE-20180603IJ.lan:e-book-consumer-hystrix-ribbon:9000 - registration status: 204
+22:32:51.786 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+22:32:51.793 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9000
+22:32:51.812 [main] INFO  com.eureka.ConsumerApplication - Started ConsumerApplication in 20.36 seconds (JVM running for 22.938)
+22:33:16.824 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:33:16.824 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:33:16.871 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms

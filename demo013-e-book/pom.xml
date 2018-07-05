@@ -56,7 +56,11 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-
+        <!--feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -81,6 +85,9 @@
     <modules>
         <module>e-book-product</module>
         <module>e-book-consumer</module>
+        <module>e-book-consumer-order</module>
         <module>e-book-user</module>
+        <module>e-book-trade</module>
+        <module>e-book-order</module>
     </modules>
 </project>

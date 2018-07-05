@@ -4,16 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.book</groupId>
-    <artifactId>e-book-trade-api</artifactId>
+    <artifactId>consumer-order</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>e-book-trade-api</name>
+    <name>consumer-order</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
         <groupId>com.book</groupId>
-        <artifactId>trade</artifactId>
+        <artifactId>ebook</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -29,6 +29,23 @@
             <artifactId>e-book-order-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>e-book-product-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>e-book-trade-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>e-book-user-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -39,6 +56,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

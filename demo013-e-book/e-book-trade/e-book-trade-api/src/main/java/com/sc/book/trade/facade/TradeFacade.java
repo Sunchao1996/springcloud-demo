@@ -1,7 +1,9 @@
 package com.sc.book.trade.facade;
 
 
-import org.springframework.core.annotation.Order;
+import com.sc.book.trade.domain.Trade;
+import com.sc.book.order.domain.Order;
+import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +17,6 @@ import java.util.List;
  */
 @RequestMapping("/trade")
 public interface TradeFacade {
-    @RequestMapping(value = "createTrade", method = RequestMethod.POST)
-    Integer createTrade(@RequestBody Thread thread);
+    @RequestMapping(value = "/createTrade", method = RequestMethod.POST,consumes = MimeTypeUtils.APPLICATION_JSON_VALUE)
+    void createTrade(@RequestBody Order order);
 }
