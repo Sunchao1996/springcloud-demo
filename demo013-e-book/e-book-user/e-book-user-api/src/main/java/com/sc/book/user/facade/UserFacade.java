@@ -16,7 +16,7 @@ import java.util.List;
  */
 @RequestMapping("/user")
 public interface UserFacade {
-    @RequestMapping(value = "login", method = RequestMethod.GET)
-    Integer login(String userName, String password);
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    Integer login(@RequestParam("userName") String userName, @RequestParam("password") String password);
 
 }

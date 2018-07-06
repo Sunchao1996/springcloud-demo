@@ -6,6 +6,7 @@ import com.sc.book.trade.domain.Trade;
 import com.sc.book.trade.service.OrderService;
 import com.sc.book.trade.service.TradeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,10 +23,10 @@ public class TradeFacadeImpl implements TradeFacade {
     private TradeService tradeService;
 
     @Override
-    public void createTrade(Order order) {
+    public void createTrade(@RequestBody Order order) {
 
         //交易id
-        Integer trade_id= tradeService.createTrade(order);
+        Integer trade_id = tradeService.createTrade(order);
         order = orderService.findOrderById(order.getId());
         order.setTradeId(trade_id);
         order.setTradeStatus(true);

@@ -24,12 +24,14 @@ public class TradeService {
      */
     public Integer createTrade(Order order) {
         Trade trade = new Trade();
-        trade.setPayStatus((byte)4);
-        trade.setPayType((byte)1);
+        trade.setPayStatus((byte) 4);
+        trade.setPayType((byte) 1);
         trade.setOrderId(order.getId());
         trade.setUserId(order.getUserId());
         trade.setGatewayPayPrice(order.getPrice());
         trade.setGatewayPayTime(new Date());
+        trade.setPrice(order.getPrice());
+        trade.setDeleted((byte)0);
         //网管流水号
         trade.setGatewayPayNum(String.valueOf(new Date().getTime()));
         return tradeMapper.insert(trade);
