@@ -1,6 +1,6 @@
 package com.eureka.service;
 
-import com.book.product.facade.ProductFacade;
+import com.sc.book.product.facade.ProductFacade;
 import org.springframework.cloud.netflix.feign.FeignClient;
 
 /**

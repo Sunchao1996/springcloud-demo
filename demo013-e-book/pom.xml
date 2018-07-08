@@ -89,5 +89,6 @@
         <module>e-book-user</module>
         <module>e-book-trade</module>
         <module>e-book-order</module>
+        <module>zuul</module>
     </modules>
 </project>
