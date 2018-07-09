@@ -18,8 +18,9 @@ public class OrderService {
     private OrderMapper orderMapper;
 
     public int insert(Order order) {
-        orderMapper.insert(order);
-        return order.getId();
+        System.out.println(order);
+        return orderMapper.insert(order);
+//        return order.getId();
     }
 
     public List<Order> findOrderByUserId(Integer userId) {

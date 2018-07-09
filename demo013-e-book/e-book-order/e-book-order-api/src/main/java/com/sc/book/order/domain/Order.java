@@ -92,4 +92,19 @@ public class Order {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", productId=" + productId +
+                ", price=" + price +
+                ", userId=" + userId +
+                ", tradeId=" + tradeId +
+                ", tradeStatus=" + tradeStatus +
+                ", deleted=" + deleted +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                '}';
+    }
 }

@@ -1,7 +1,7 @@
 package com.sc.book.controller;
 
-import com.book.product.domain.Product;
 import com.sc.book.order.domain.Order;
+import com.sc.book.product.domain.Product;
 import com.sc.book.service.OrderService;
 import com.sc.book.service.ProductService;
 import com.sc.book.service.TradeService;
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.sound.midi.Soundbank;
 import java.util.Date;
 import java.util.List;
 
@@ -30,12 +31,13 @@ public class ConsumerOrderController {
     private UserService userService;
 
     @RequestMapping(value = "/createOrder", method = RequestMethod.GET)
-    public List<Order> createOrder(String userName,String password) {
+    public List<Order> createOrder(String userName, String password) {
         //先登录
-        Integer userId = userService.login(userName,password);
+        Integer userId = userService.login(userName, password);
         //获取第一个商品
-        List<Product> productList = productService.list();
+        List<Product> productList = productService.findAllProduct();
         Product product = productList.get(0);
+        System.out.println(product);
         //生成订单
         Order order = new Order();
         order.setPrice(product.getPrice());
@@ -43,11 +45,14 @@ public class ConsumerOrderController {
         order.setTradeStatus(false);
         order.setCreateTime(new Date());
         order.setUserId(userId);
-        order.setId(orderService.insert(order));
+        order.setDeleted((byte)1);
+        System.out.println("=====order" + order);
+        Integer order_id = orderService.insert(order);
+        order.setId(order_id);
         //开始交易
         tradeService.createTrade(order);
-
-        return orderService.findOrderByUserId(userId);
+        List<Order> lists = orderService.findOrderByUserId(userId);
+        return lists;
     }
 
 }

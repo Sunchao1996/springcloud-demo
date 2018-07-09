@@ -5,6 +5,7 @@ import com.netflix.discovery.converters.Auto;
 import com.sc.book.order.domain.Order;
 import com.sc.book.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class OrderFacadeImpl implements OrderFacade {
     private OrderService orderService;
 
     @Override
-    public Integer insert(Order order) {
+    public Integer insert(@RequestBody Order order) {
         return orderService.insert(order);
     }
 
@@ -30,7 +31,7 @@ public class OrderFacadeImpl implements OrderFacade {
     }
 
     @Override
-    public void updateOrderByTrade(Order obj) {
+    public void updateOrderByTrade(@RequestBody Order obj) {
         orderService.updateOrderByTrade(obj);
     }
 

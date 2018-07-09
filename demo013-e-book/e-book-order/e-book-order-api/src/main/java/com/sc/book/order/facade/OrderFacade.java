@@ -26,7 +26,7 @@ public interface OrderFacade {
      * 根据用户id获取订单
      */
     @RequestMapping(value = "/findOrderByUserId", method = RequestMethod.GET)
-    List<Order> findOrderByUserId(Integer userId);
+    List<Order> findOrderByUserId(@RequestParam("userId") Integer userId);
 
     /**
      * 根据交易号更新
