@@ -69,7 +69,7 @@ public class ProductFallbackProvider implements ZuulFallbackProvider {
             @Override
             public HttpHeaders getHeaders() {
                 HttpHeaders header = new HttpHeaders();
-                //相当于
+                //相当于application/json;charset=utf-8
                 MediaType mediaType = new MediaType("application", "json", Charset.forName("utf-8"));
                 header.setContentType(mediaType);
                 return header;
