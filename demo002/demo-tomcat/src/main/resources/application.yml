@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123456@47.98.126.115:8761/eureka
+
+  instance:
+    hostname: eureka2
+    perferIpAddress: true
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
+server:
+  port: 8762
+security:
+  basic:
+    enabled: true
+  user:
+    password: 123456
+    name: user
