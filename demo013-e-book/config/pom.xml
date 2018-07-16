@@ -41,5 +41,6 @@
     <modules>
       <module>config-server</module>
       <module>config-client</module>
+      <module>config-client-refresh</module>
     </modules>
 </project>

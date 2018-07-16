@@ -23,9 +23,10 @@ import java.util.Map;
 public class HttpClientUtil {  
 	
 	public static void main(String[] args) {
-		String url="http://127.0.0.1:8081/shutdown";
-		HttpClientUtil.doPost(url);
-	}
+		String url="http://127.0.0.1:9031/refresh";
+		String html = HttpClientUtil.doPost(url);
+        System.out.println(html);
+    }
 	
     public static String doGet(String url, Map<String, String> param) {  
   
