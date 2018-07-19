@@ -16,6 +16,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -23,8 +24,8 @@ import java.util.Map;
 public class HttpClientUtil {  
 	
 	public static void main(String[] args) {
-		String url="http://127.0.0.1:9031/refresh";
-		String html = HttpClientUtil.doPost(url);
+		String url="http://127.0.0.1:9030/encrypt";
+		String html = HttpClientUtil.doPostJson(url,"123456");
         System.out.println(html);
     }
 	
