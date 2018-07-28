@@ -24,8 +24,9 @@ import java.util.Map;
 public class HttpClientUtil {  
 	
 	public static void main(String[] args) {
-		String url="http://127.0.0.1:9030/encrypt";
-		String html = HttpClientUtil.doPostJson(url,"123456");
+//		String url="http://127.0.0.1:9030/encrypt";
+		String url="http://127.0.0.1:9030/bus/refresh";
+		String html = HttpClientUtil.doPost(url);
         System.out.println(html);
     }
 	

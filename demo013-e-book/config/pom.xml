@@ -40,8 +40,11 @@
     </build>
     <modules>
       <module>config-server</module>
+      <module>config-server-bus</module>
       <module>config-client</module>
       <module>config-client-refresh</module>
+      <module>config-client-bus</module>
+      <module>config-client-bus1</module>
       <module>config-server-encrypt-symmetric</module>
       <module>config-server-encrypt-rsa</module>
       <module>config-encrypt-symmetric-product-core</module>
