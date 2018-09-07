@@ -22,9 +22,9 @@ public class StreamSenderApplicationTests {
         Product obj=new Product();
         obj.setId(100);
         obj.setName("spring cloud");
-//        for (int i = 0; i <10; i++) {
+        for (int i = 0; i <10; i++) {
             Message message=MessageBuilder.withPayload(obj).build();
             iSendService.send().send(message);
-//        }
+        }
     }
 }

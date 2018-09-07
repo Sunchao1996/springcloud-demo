@@ -1,4 +1,4 @@
-package com.receiver;
+package com.stream;
 
 import java.io.Serializable;
 import java.util.Date;
