@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="rollingFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./logs/server.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./logs/server.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>20MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="async-stdout" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="stdout" />
+        <includeCallerData>true</includeCallerData>
+    </appender>
+    <appender name="async-rollingFile" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="rollingFile" />
+        <includeCallerData>true</includeCallerData>
+    </appender>
+    <!-- 为logstash输出的JSON格式的Appender -->
+    <appender name="logstash"
+              class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>47.98.126.115:9250</destination>
+        <!-- 日志输出编码 -->
+        <encoder
+                class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <timeZone>UTC</timeZone>
+                </timestamp>
+                <pattern>
+                    <pattern>
+                        {
+                        "severity": "%level",
+                        "service": "${springAppName:-}",
+                        "trace": "%X{X-B3-TraceId:-}",
+                        "span": "%X{X-B3-SpanId:-}",
+                        "exportable": "%X{X-Span-Export:-}",
+                        "pid": "${PID:-}",
+                        "thread": "%thread",
+                        "class": "%logger{40}",
+                        "rest": "%message"
+                        }
+                    </pattern>
+                </pattern>
+            </providers>
+        </encoder>
+    </appender>
+    <logger name="org.quartz.impl.jdbcjobstore.JobStoreTX" level="INFO"/>
+    <logger name="org.quartz.impl.jdbcjobstore.StdRowLockSemaphore" level="INFO"/>
+    <logger name="org.springframework.amqp.rabbit.core.RabbitTemplate" level="INFO"/>
+    <logger name="org.springframework.amqp.rabbit.listener.BlockingQueueConsumer" level="INFO"/>
+
+    <root level="DEBUT">
+        <appender-ref ref="async-stdout" />
+        <appender-ref ref="async-rollingFile" />
+    </root>
+</configuration>
