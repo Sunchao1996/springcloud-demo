@@ -4,30 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.book</groupId>
-    <artifactId>sleuth</artifactId>
+    <artifactId>sleuth-zipkin-mq-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>sleuth</name>
+    <name>sleuth-zipkin-mq-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
         <groupId>com.book</groupId>
-        <artifactId>ebook</artifactId>
+        <artifactId>sleuth</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -38,14 +28,9 @@
             </plugin>
         </plugins>
     </build>
+
     <modules>
-        <module>sleuth-consumer</module>
-        <module>sleuth-elk-consumer</module>
-        <module>sleuth-zipkin-consumer</module>
-        <module>sleuth-zipkin-mq-consumer</module>
-        <module>sleuth-product</module>
-        <module>sleuth-elk-product</module>
-        <module>sleuth-zipkin-product</module>
-        <module>sleuth-zipkin-mq-product</module>
+        <module>sleuth-zipkin-mq-consumer-feign</module>
     </modules>
+
 </project>

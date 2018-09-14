@@ -4,16 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.book</groupId>
-    <artifactId>sleuth</artifactId>
+    <artifactId>sleuth-zipkin-mq-consumer-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
-    <name>sleuth</name>
+    <name>sleuth-zipkin-mq-consumer-feign</name>
     <description>Demo project for Spring Boot</description>
+
 
     <parent>
         <groupId>com.book</groupId>
-        <artifactId>ebook</artifactId>
+        <artifactId>sleuth-zipkin-mq-consumer</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -28,6 +29,28 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.book</groupId>
+            <artifactId>sleuth-zipkin-mq-product-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-stream</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -38,14 +61,6 @@
             </plugin>
         </plugins>
     </build>
-    <modules>
-        <module>sleuth-consumer</module>
-        <module>sleuth-elk-consumer</module>
-        <module>sleuth-zipkin-consumer</module>
-        <module>sleuth-zipkin-mq-consumer</module>
-        <module>sleuth-product</module>
-        <module>sleuth-elk-product</module>
-        <module>sleuth-zipkin-product</module>
-        <module>sleuth-zipkin-mq-product</module>
-    </modules>
+
+
 </project>
